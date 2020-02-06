@@ -15,6 +15,10 @@
 		88DD897223EC6CAC00F493DB /* TopStoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD897123EC6CAC00F493DB /* TopStoriesViewController.swift */; };
 		88DD897423EC6DAC00F493DB /* SavedStoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD897323EC6DAC00F493DB /* SavedStoriesViewController.swift */; };
 		88DD897623EC6E0100F493DB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD897523EC6E0100F493DB /* SettingsViewController.swift */; };
+		88DD897A23EC715700F493DB /* TopStoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD897923EC715700F493DB /* TopStoriesView.swift */; };
+		88DD897C23EC716D00F493DB /* SavedStoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD897B23EC716D00F493DB /* SavedStoriesView.swift */; };
+		88DD897E23EC71CC00F493DB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD897D23EC71CC00F493DB /* SettingsView.swift */; };
+		88DD898023EC77E600F493DB /* StoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD897F23EC77E600F493DB /* StoriesCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		88DD897123EC6CAC00F493DB /* TopStoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesViewController.swift; sourceTree = "<group>"; };
 		88DD897323EC6DAC00F493DB /* SavedStoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedStoriesViewController.swift; sourceTree = "<group>"; };
 		88DD897523EC6E0100F493DB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		88DD897923EC715700F493DB /* TopStoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesView.swift; sourceTree = "<group>"; };
+		88DD897B23EC716D00F493DB /* SavedStoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedStoriesView.swift; sourceTree = "<group>"; };
+		88DD897D23EC71CC00F493DB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		88DD897F23EC77E600F493DB /* StoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 			children = (
 				88DD895B23EC6B5F00F493DB /* AppDelegate.swift */,
 				88DD895D23EC6B5F00F493DB /* SceneDelegate.swift */,
+				88DD897823EC713A00F493DB /* Views */,
 				88DD897723EC6F5600F493DB /* ViewControllers */,
 				88DD896423EC6B6400F493DB /* Assets.xcassets */,
 				88DD896623EC6B6400F493DB /* LaunchScreen.storyboard */,
@@ -79,6 +88,17 @@
 				88DD897523EC6E0100F493DB /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		88DD897823EC713A00F493DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88DD897923EC715700F493DB /* TopStoriesView.swift */,
+				88DD897B23EC716D00F493DB /* SavedStoriesView.swift */,
+				88DD897D23EC71CC00F493DB /* SettingsView.swift */,
+				88DD897F23EC77E600F493DB /* StoriesCollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,11 +171,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DD897C23EC716D00F493DB /* SavedStoriesView.swift in Sources */,
 				88DD897223EC6CAC00F493DB /* TopStoriesViewController.swift in Sources */,
 				88DD895C23EC6B5F00F493DB /* AppDelegate.swift in Sources */,
+				88DD897E23EC71CC00F493DB /* SettingsView.swift in Sources */,
 				88DD895E23EC6B5F00F493DB /* SceneDelegate.swift in Sources */,
+				88DD897A23EC715700F493DB /* TopStoriesView.swift in Sources */,
 				88DD897023EC6C2C00F493DB /* NYTTopStoriesTabController.swift in Sources */,
 				88DD897423EC6DAC00F493DB /* SavedStoriesViewController.swift in Sources */,
+				88DD898023EC77E600F493DB /* StoriesCollectionViewCell.swift in Sources */,
 				88DD897623EC6E0100F493DB /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
