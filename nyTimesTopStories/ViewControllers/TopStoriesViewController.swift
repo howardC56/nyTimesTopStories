@@ -21,9 +21,7 @@ class TopStoriesViewController: UIViewController {
        view.backgroundColor = .systemBackground
        newsFeedView.collectionView.dataSource = self
        newsFeedView.collectionView.delegate = self
-       
-     
-       newsFeedView.collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "articleCell")
+       newsFeedView.collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "StoriesCell")
      }
    }
 
@@ -33,7 +31,7 @@ class TopStoriesViewController: UIViewController {
      }
      
      func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-       let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "articleCell", for: indexPath)
+       let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StoriesCell", for: indexPath)
        cell.backgroundColor = .white
        return cell
      }

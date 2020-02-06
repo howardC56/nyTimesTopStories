@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,7 +19,20 @@
 		88DD897C23EC716D00F493DB /* SavedStoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD897B23EC716D00F493DB /* SavedStoriesView.swift */; };
 		88DD897E23EC71CC00F493DB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD897D23EC71CC00F493DB /* SettingsView.swift */; };
 		88DD898023EC77E600F493DB /* StoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD897F23EC77E600F493DB /* StoriesCollectionViewCell.swift */; };
+		88DD898223EC852100F493DB /* TopStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD898123EC852100F493DB /* TopStories.swift */; };
+		88DD898B23EC859300F493DB /* nyTimesTopStoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD898A23EC859300F493DB /* nyTimesTopStoriesTests.swift */; };
+		88DD899423EC874D00F493DB /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 88DD899323EC874D00F493DB /* ImageKit */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88DD898D23EC859300F493DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88DD895023EC6B5F00F493DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88DD895723EC6B5F00F493DB;
+			remoteInfo = nyTimesTopStories;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		88DD895823EC6B5F00F493DB /* nyTimesTopStories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nyTimesTopStories.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,10 +49,22 @@
 		88DD897B23EC716D00F493DB /* SavedStoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedStoriesView.swift; sourceTree = "<group>"; };
 		88DD897D23EC71CC00F493DB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		88DD897F23EC77E600F493DB /* StoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		88DD898123EC852100F493DB /* TopStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStories.swift; sourceTree = "<group>"; };
+		88DD898823EC859300F493DB /* nyTimesTopStoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nyTimesTopStoriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88DD898A23EC859300F493DB /* nyTimesTopStoriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nyTimesTopStoriesTests.swift; sourceTree = "<group>"; };
+		88DD898C23EC859300F493DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		88DD895523EC6B5F00F493DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88DD899423EC874D00F493DB /* ImageKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88DD898523EC859300F493DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -52,7 +77,9 @@
 		88DD894F23EC6B5F00F493DB = {
 			isa = PBXGroup;
 			children = (
+				88DD898323EC852C00F493DB /* Models */,
 				88DD895A23EC6B5F00F493DB /* nyTimesTopStories */,
+				88DD898923EC859300F493DB /* nyTimesTopStoriesTests */,
 				88DD895923EC6B5F00F493DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				88DD895823EC6B5F00F493DB /* nyTimesTopStories.app */,
+				88DD898823EC859300F493DB /* nyTimesTopStoriesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +129,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		88DD898323EC852C00F493DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				88DD898123EC852100F493DB /* TopStories.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		88DD898923EC859300F493DB /* nyTimesTopStoriesTests */ = {
+			isa = PBXGroup;
+			children = (
+				88DD898A23EC859300F493DB /* nyTimesTopStoriesTests.swift */,
+				88DD898C23EC859300F493DB /* Info.plist */,
+			);
+			path = nyTimesTopStoriesTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,9 +162,30 @@
 			dependencies = (
 			);
 			name = nyTimesTopStories;
+			packageProductDependencies = (
+				88DD899323EC874D00F493DB /* ImageKit */,
+			);
 			productName = nyTimesTopStories;
 			productReference = 88DD895823EC6B5F00F493DB /* nyTimesTopStories.app */;
 			productType = "com.apple.product-type.application";
+		};
+		88DD898723EC859300F493DB /* nyTimesTopStoriesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88DD898F23EC859300F493DB /* Build configuration list for PBXNativeTarget "nyTimesTopStoriesTests" */;
+			buildPhases = (
+				88DD898423EC859300F493DB /* Sources */,
+				88DD898523EC859300F493DB /* Frameworks */,
+				88DD898623EC859300F493DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88DD898E23EC859300F493DB /* PBXTargetDependency */,
+			);
+			name = nyTimesTopStoriesTests;
+			productName = nyTimesTopStoriesTests;
+			productReference = 88DD898823EC859300F493DB /* nyTimesTopStoriesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -134,6 +200,10 @@
 					88DD895723EC6B5F00F493DB = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
+					88DD898723EC859300F493DB = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 88DD895723EC6B5F00F493DB;
+					};
 				};
 			};
 			buildConfigurationList = 88DD895323EC6B5F00F493DB /* Build configuration list for PBXProject "nyTimesTopStories" */;
@@ -145,11 +215,15 @@
 				Base,
 			);
 			mainGroup = 88DD894F23EC6B5F00F493DB;
+			packageReferences = (
+				88DD899223EC874D00F493DB /* XCRemoteSwiftPackageReference "ImageKit" */,
+			);
 			productRefGroup = 88DD895923EC6B5F00F493DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				88DD895723EC6B5F00F493DB /* nyTimesTopStories */,
+				88DD898723EC859300F493DB /* nyTimesTopStoriesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -164,6 +238,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		88DD898623EC859300F493DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -175,6 +256,7 @@
 				88DD897223EC6CAC00F493DB /* TopStoriesViewController.swift in Sources */,
 				88DD895C23EC6B5F00F493DB /* AppDelegate.swift in Sources */,
 				88DD897E23EC71CC00F493DB /* SettingsView.swift in Sources */,
+				88DD898223EC852100F493DB /* TopStories.swift in Sources */,
 				88DD895E23EC6B5F00F493DB /* SceneDelegate.swift in Sources */,
 				88DD897A23EC715700F493DB /* TopStoriesView.swift in Sources */,
 				88DD897023EC6C2C00F493DB /* NYTTopStoriesTabController.swift in Sources */,
@@ -184,7 +266,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		88DD898423EC859300F493DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88DD898B23EC859300F493DB /* nyTimesTopStoriesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88DD898E23EC859300F493DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88DD895723EC6B5F00F493DB /* nyTimesTopStories */;
+			targetProxy = 88DD898D23EC859300F493DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		88DD896623EC6B6400F493DB /* LaunchScreen.storyboard */ = {
@@ -348,6 +446,46 @@
 			};
 			name = Release;
 		};
+		88DD899023EC859300F493DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H39KTTHR8M;
+				INFOPLIST_FILE = nyTimesTopStoriesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.howardchang.login.nyTimesTopStoriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nyTimesTopStories.app/nyTimesTopStories";
+			};
+			name = Debug;
+		};
+		88DD899123EC859300F493DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H39KTTHR8M;
+				INFOPLIST_FILE = nyTimesTopStoriesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.howardchang.login.nyTimesTopStoriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nyTimesTopStories.app/nyTimesTopStories";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -369,7 +507,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		88DD898F23EC859300F493DB /* Build configuration list for PBXNativeTarget "nyTimesTopStoriesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88DD899023EC859300F493DB /* Debug */,
+				88DD899123EC859300F493DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		88DD899223EC874D00F493DB /* XCRemoteSwiftPackageReference "ImageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpaul/ImageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88DD899323EC874D00F493DB /* ImageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88DD899223EC874D00F493DB /* XCRemoteSwiftPackageReference "ImageKit" */;
+			productName = ImageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 88DD895023EC6B5F00F493DB /* Project object */;
 }
