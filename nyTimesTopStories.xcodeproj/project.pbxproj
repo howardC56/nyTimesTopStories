@@ -22,6 +22,7 @@
 		88DD898223EC852100F493DB /* TopStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD898123EC852100F493DB /* TopStories.swift */; };
 		88DD898B23EC859300F493DB /* nyTimesTopStoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD898A23EC859300F493DB /* nyTimesTopStoriesTests.swift */; };
 		88DD899423EC874D00F493DB /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 88DD899323EC874D00F493DB /* ImageKit */; };
+		88DD899723EC87ED00F493DB /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD899623EC87ED00F493DB /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		88DD898823EC859300F493DB /* nyTimesTopStoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nyTimesTopStoriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DD898A23EC859300F493DB /* nyTimesTopStoriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nyTimesTopStoriesTests.swift; sourceTree = "<group>"; };
 		88DD898C23EC859300F493DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88DD899623EC87ED00F493DB /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		88DD894F23EC6B5F00F493DB = {
 			isa = PBXGroup;
 			children = (
+				88DD899523EC87D900F493DB /* Networking */,
 				88DD898323EC852C00F493DB /* Models */,
 				88DD895A23EC6B5F00F493DB /* nyTimesTopStories */,
 				88DD898923EC859300F493DB /* nyTimesTopStoriesTests */,
@@ -144,6 +147,14 @@
 				88DD898C23EC859300F493DB /* Info.plist */,
 			);
 			path = nyTimesTopStoriesTests;
+			sourceTree = "<group>";
+		};
+		88DD899523EC87D900F493DB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				88DD899623EC87ED00F493DB /* APIClient.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +274,7 @@
 				88DD897423EC6DAC00F493DB /* SavedStoriesViewController.swift in Sources */,
 				88DD898023EC77E600F493DB /* StoriesCollectionViewCell.swift in Sources */,
 				88DD897623EC6E0100F493DB /* SettingsViewController.swift in Sources */,
+				88DD899723EC87ED00F493DB /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
