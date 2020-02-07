@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import DataPersistence
 
 class NYTTopStoriesTabController: UITabBarController {
 
+    private var dataPersistence = DataPersistence<Article>(filename: "Article.plist")
+    
     private lazy var firstVC: UINavigationController = {
         let navController = UINavigationController(rootViewController: TopStoriesViewController())
         navController.tabBarItem = UITabBarItem(title: "Top Stories", image: UIImage(systemName: "book"), tag: 0)
@@ -17,7 +20,10 @@ class NYTTopStoriesTabController: UITabBarController {
     }()
     
     private lazy var secondVC: UINavigationController = {
-          let navController = UINavigationController(rootViewController: SavedStoriesViewController())
+        let viewController = SavedStoriesViewController()
+        viewController.dataPersistence = dataPersistence
+        viewController.dataPersistence.delegate = viewController
+          let navController = UINavigationController(rootViewController: viewController)
           navController.tabBarItem = UITabBarItem(title: "Saved", image: UIImage(systemName: "bookmark"), tag: 1)
           return navController
       }()

@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import ImageKit
+import DataPersistence
 
 class ArticleDetailViewController: UIViewController {
 
     public var article: Article?
-    let articleView = ArticleDetailView()
+    private let articleView = ArticleDetailView()
+    public var dataPersistence: DataPersistence<Article>!
     
     override func loadView() {
         view = articleView
@@ -26,7 +29,12 @@ class ArticleDetailViewController: UIViewController {
     }
     
     @objc func saveArticlePressed(_ sender: UIBarButtonItem) {
-        
+        guard let article = article else { return }
+        do {
+        try dataPersistence.createItem(article)
+        } catch {
+            print("error saving article: \(error)")
+    }
     }
     
     private func updateUI() {
@@ -34,6 +42,18 @@ class ArticleDetailViewController: UIViewController {
             fatalError("did not load article")
         }
         navigationItem.title = article.title
+        articleView.headline.text = article.abstract
+        articleView.imageView.getImage(with: article.getArticleImageUrl(.superJumbo)) { [weak self] (result) in
+            DispatchQueue.main.async {
+                switch result {
+                case .failure:
+                    self?.articleView.imageView.image = UIImage(systemName: "exclamationmark-octogon")
+                case .success(let image):
+                    self?.articleView.imageView.image = image
+                }
+            }
+            
+        }
     }
 
  

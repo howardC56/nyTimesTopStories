@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import DataPersistence
 
 class TopStoriesViewController: UIViewController {
 
     private let newsFeedView = TopStoriesView()
+    public var dataPersistence: DataPersistence<Article>!
     
     private var newsArticles = [Article]() {
         didSet {
@@ -72,6 +74,7 @@ class TopStoriesViewController: UIViewController {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selected = newsArticles[indexPath.row]
         let viewController = ArticleDetailViewController()
+        viewController.dataPersistence = dataPersistence
         viewController.article = selected
         navigationController?.pushViewController(viewController, animated: true)
     }
