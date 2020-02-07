@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88193F8323EDCBCE0096B2AD /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88193F8223EDCBCE0096B2AD /* ArticleDetailViewController.swift */; };
+		88193F8523EDD0E20096B2AD /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88193F8423EDD0E20096B2AD /* ArticleDetailView.swift */; };
 		88DD895C23EC6B5F00F493DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD895B23EC6B5F00F493DB /* AppDelegate.swift */; };
 		88DD895E23EC6B5F00F493DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD895D23EC6B5F00F493DB /* SceneDelegate.swift */; };
 		88DD896523EC6B6400F493DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88DD896423EC6B6400F493DB /* Assets.xcassets */; };
@@ -23,6 +25,7 @@
 		88DD898B23EC859300F493DB /* nyTimesTopStoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD898A23EC859300F493DB /* nyTimesTopStoriesTests.swift */; };
 		88DD899423EC874D00F493DB /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 88DD899323EC874D00F493DB /* ImageKit */; };
 		88DD899723EC87ED00F493DB /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD899623EC87ED00F493DB /* APIClient.swift */; };
+		88DD899923EC8BEF00F493DB /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DD899823EC8BEF00F493DB /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		88193F8223EDCBCE0096B2AD /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
+		88193F8423EDD0E20096B2AD /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
 		88DD895823EC6B5F00F493DB /* nyTimesTopStories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nyTimesTopStories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DD895B23EC6B5F00F493DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88DD895D23EC6B5F00F493DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +60,7 @@
 		88DD898A23EC859300F493DB /* nyTimesTopStoriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nyTimesTopStoriesTests.swift; sourceTree = "<group>"; };
 		88DD898C23EC859300F493DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88DD899623EC87ED00F493DB /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		88DD899823EC8BEF00F493DB /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		88DD894F23EC6B5F00F493DB = {
 			isa = PBXGroup;
 			children = (
+				88DD899823EC8BEF00F493DB /* Config.swift */,
 				88DD899523EC87D900F493DB /* Networking */,
 				88DD898323EC852C00F493DB /* Models */,
 				88DD895A23EC6B5F00F493DB /* nyTimesTopStories */,
@@ -115,6 +122,7 @@
 			children = (
 				88DD896F23EC6C2C00F493DB /* NYTTopStoriesTabController.swift */,
 				88DD897123EC6CAC00F493DB /* TopStoriesViewController.swift */,
+				88193F8223EDCBCE0096B2AD /* ArticleDetailViewController.swift */,
 				88DD897323EC6DAC00F493DB /* SavedStoriesViewController.swift */,
 				88DD897523EC6E0100F493DB /* SettingsViewController.swift */,
 			);
@@ -125,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				88DD897923EC715700F493DB /* TopStoriesView.swift */,
+				88193F8423EDD0E20096B2AD /* ArticleDetailView.swift */,
 				88DD897B23EC716D00F493DB /* SavedStoriesView.swift */,
 				88DD897D23EC71CC00F493DB /* SettingsView.swift */,
 				88DD897F23EC77E600F493DB /* StoriesCollectionViewCell.swift */,
@@ -266,12 +275,15 @@
 				88DD897C23EC716D00F493DB /* SavedStoriesView.swift in Sources */,
 				88DD897223EC6CAC00F493DB /* TopStoriesViewController.swift in Sources */,
 				88DD895C23EC6B5F00F493DB /* AppDelegate.swift in Sources */,
+				88193F8523EDD0E20096B2AD /* ArticleDetailView.swift in Sources */,
 				88DD897E23EC71CC00F493DB /* SettingsView.swift in Sources */,
 				88DD898223EC852100F493DB /* TopStories.swift in Sources */,
 				88DD895E23EC6B5F00F493DB /* SceneDelegate.swift in Sources */,
+				88DD899923EC8BEF00F493DB /* Config.swift in Sources */,
 				88DD897A23EC715700F493DB /* TopStoriesView.swift in Sources */,
 				88DD897023EC6C2C00F493DB /* NYTTopStoriesTabController.swift in Sources */,
 				88DD897423EC6DAC00F493DB /* SavedStoriesViewController.swift in Sources */,
+				88193F8323EDCBCE0096B2AD /* ArticleDetailViewController.swift in Sources */,
 				88DD898023EC77E600F493DB /* StoriesCollectionViewCell.swift in Sources */,
 				88DD897623EC6E0100F493DB /* SettingsViewController.swift in Sources */,
 				88DD899723EC87ED00F493DB /* APIClient.swift in Sources */,
